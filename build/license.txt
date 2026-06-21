@@ -1,0 +1,13 @@
+Sub Sync - End User License and Privacy Agreement
+
+1. Privacy & Data Collection
+We respect your privacy. This software is 100% safe. All file processing happens locally on your machine. We do NOT collect, store, or transmit any of your personal details, file names, or usage data.
+
+2. Open Source License
+This application is open-source and distributed under the Apache License, Version 2.0.
+You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0
+
+The full source code is publicly available on GitHub for transparency and community contributions.
+
+3. Liability
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
