@@ -1,73 +1,27 @@
-# React + TypeScript + Vite
+# Sub Sync
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A desktop application built with Electron and React that helps you automatically organize and rename subtitle files to match your video files perfectly.
 
-Currently, two official plugins are available:
+## 🚀 Download & Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Download the Windows Installer (.exe)](https://github.com/Sandika-2003/Sub-Sync/releases/latest)**
 
-## React Compiler
+*Click the link above to go to the releases page, then click on `Sub Sync Setup 0.0.1.exe` under the "Assets" dropdown to download it.*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 How to Use
 
-## Expanding the ESLint configuration
+1. **Open the App:** Launch Sub Sync after installing.
+2. **Select Folder:** Click the "Select Folder" button at the top. Choose the folder on your computer that contains both your video files (e.g., `.mp4`, `.mkv`) and your subtitle files (e.g., `.srt`, `.ass`).
+3. **Review Pairings:** The app will automatically scan the folder and display all your videos on the left and all your subtitles on the right. 
+   - **Important:** You can **drag and drop** the subtitle items up and down in the list to ensure they align perfectly across from their corresponding video file.
+4. **Rename Subtitles:** Once the videos and subtitles are aligned properly side-by-side, click the big **RENAME SUBTITLES** button at the bottom.
+5. **Done!** The app will rename all the subtitle files to match their paired video files exactly. Your media player will now automatically detect the subtitles when you play the videos!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Development
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+If you'd like to build the project from source:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run dev` to start the development server
+4. Run `npm run build` followed by `npm run package:win` to build the `.exe` installer.
