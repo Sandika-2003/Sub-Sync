@@ -6,7 +6,7 @@ A desktop application built with Electron and React that helps you automatically
 
 **[Download the Windows Installer (.exe)](https://github.com/Sandika-2003/Sub-Sync/releases/latest)**
 
-*Click the link above to go to the releases page, then click on `Sub Sync Setup 1.0.exe` under the "Assets" dropdown to download it.*
+*Click the link above to go to the releases page, then click on `Sub.Sync.Setup.v1.0.exe` under the "Assets" dropdown to download it.*
 
 ## 📖 How to Use
 
